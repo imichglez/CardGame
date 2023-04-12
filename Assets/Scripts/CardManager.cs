@@ -20,7 +20,7 @@ public class CardManager : MonoBehaviour
             card.attack = Random.Range(10, 100);
             card.health = Random.Range(10, 100);
             card.value = Random.Range(10, 100);
-            spriteDecider = Random.Range(0,5);
+            spriteDecider = Random.Range(0,10);
 
             if(spriteDecider > 0 && spriteDecider < 2){
                 card.theSprite = sprites[0];
