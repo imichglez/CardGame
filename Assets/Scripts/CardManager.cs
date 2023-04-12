@@ -22,18 +22,27 @@ public class CardManager : MonoBehaviour
             card.value = Random.Range(10, 100);
             spriteDecider = Random.Range(0,10);
 
-            if(spriteDecider > 0 && spriteDecider < 2){
+            if(spriteDecider == 0){
                 card.theSprite = sprites[0];
-            } else if(spriteDecider > 2 && spriteDecider < 4){
+            } else if(spriteDecider == 1){
                 card.theSprite = sprites[1];
-            } else if(spriteDecider > 4 && spriteDecider < 6){
+            } else if(spriteDecider == 2){
                 card.theSprite = sprites[2];
-            } else if(spriteDecider > 6 && spriteDecider < 8){
+            } else if(spriteDecider == 3){
+                card.theSprite = sprites[3];
+            } else if(spriteDecider == 4){
                 card.theSprite = sprites[4];
-            }else{
+            } else if(spriteDecider == 5){
+                card.theSprite = sprites[5];
+            } else if(spriteDecider == 6){
+                card.theSprite = sprites[6];
+            } else if(spriteDecider == 7){
+                card.theSprite = sprites[7];
+            } else if(spriteDecider == 8){
                 card.theSprite = sprites[8];
+            } else if(spriteDecider == 9){
+                card.theSprite = sprites[9];
             }
-
 
             card.description = "Elemento " + i;
             card.name = "Card " + i;
