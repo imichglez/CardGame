@@ -20,18 +20,18 @@ public class CardManager : MonoBehaviour
             card.attack = Random.Range(10, 100);
             card.health = Random.Range(10, 100);
             card.value = Random.Range(10, 100);
-            spriteDecider = Random.Range(0,10);
+            spriteDecider = Random.Range(0,5);
 
             if(spriteDecider > 0 && spriteDecider < 2){
                 card.theSprite = sprites[0];
             } else if(spriteDecider > 2 && spriteDecider < 4){
                 card.theSprite = sprites[1];
             } else if(spriteDecider > 4 && spriteDecider < 6){
-                card.theSprite = sprites[3];
-            } else if(spriteDecider > 6 && spriteDecider < 8){
                 card.theSprite = sprites[2];
-            }else{
+            } else if(spriteDecider > 6 && spriteDecider < 8){
                 card.theSprite = sprites[4];
+            }else{
+                card.theSprite = sprites[8];
             }
 
 
